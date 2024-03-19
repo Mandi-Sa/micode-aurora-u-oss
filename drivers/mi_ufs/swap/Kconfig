@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: GPL-2.0-only
+#
+# Mi ufs swap
+#
+#
+config UFS_SWAP
+        bool "UFS SWAP"
+        depends on SCSI_UFS_QCOM
+        help
+         Kernel configuration file for UFS SWAP feature

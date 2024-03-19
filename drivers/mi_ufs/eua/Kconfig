@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: GPL-2.0-only
+#
+# Mi ufs eua
+#
+#
+config UFS_EUA
+	bool "UFS EUA"
+	depends on SCSI_UFS_QCOM
+	help
+	 Kernel configuration file for UFS EUA feature
+
+config UFS_EUA_CHECK
+	bool "UFS EUA CHECK"
+	depends on UFS_EUA
+	default n
+	help
+	 Kernel configuration file for UFS EUA feature check
